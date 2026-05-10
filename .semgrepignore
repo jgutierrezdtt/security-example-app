@@ -1,0 +1,2 @@
+# Semgrep ignora estos directorios en este repo de ejemplo
+tests/
