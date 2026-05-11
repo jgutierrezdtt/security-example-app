@@ -13,13 +13,13 @@ permissions:
 jobs:
   semgrep:
     name: Semgrep
-    uses: jgutierrezdtt/security-platform/.github/workflows/reusable/semgrep-scan.yml@main
+    uses: jgutierrezdtt/security-platform/.github/workflows/reusable-semgrep-scan.yml@main
     secrets:
       EXCEPTIONS_READER_TOKEN: ${{ secrets.EXCEPTIONS_READER_TOKEN }}
       SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
 
   dependabot:
     name: Dependabot alerts
-    uses: jgutierrezdtt/security-platform/.github/workflows/reusable/dependabot-check.yml@main
+    uses: jgutierrezdtt/security-platform/.github/workflows/reusable-dependabot-check.yml@main
     secrets:
       DEPENDABOT_CHECK_TOKEN: ${{ secrets.DEPENDABOT_CHECK_TOKEN }}

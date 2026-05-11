@@ -21,10 +21,10 @@ Su contenido es:
 ```yaml
 jobs:
   semgrep:
-    uses: jgutierrezdtt/security-platform/.github/workflows/reusable/semgrep-scan.yml@main
+    uses: jgutierrezdtt/security-platform/.github/workflows/reusable-semgrep-scan.yml@main
 
   dependabot:
-    uses: jgutierrezdtt/security-platform/.github/workflows/reusable/dependabot-check.yml@main
+    uses: jgutierrezdtt/security-platform/.github/workflows/reusable-dependabot-check.yml@main
 ```
 
 Eso es todo. Las reglas de Semgrep, los umbrales de severidad, la logica de excepciones — todo vive en security-platform. Cuando el security team actualiza algo alli, este repo lo recibe automaticamente sin ninguna accion de tu parte.
